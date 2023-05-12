@@ -4,7 +4,7 @@ export cluster_name="cnp-kind-ngdemo"
 export project_name="natgrid_demo"
 export yaml_file="cluster-example.yaml"
 export kind_config="kind_config.yaml"
-export project_home=/Users/ashley.silver/development/$project_name
+export project_home=/Users/ashley.silver/Desktop/$project_name
 
 export version="1.20.0"
 export plugging="https://github.com/EnterpriseDB/kubectl-cnp/raw/main/install.sh"
@@ -23,7 +23,7 @@ export s3_cluster2="s3://sergiocnp/cnp/dr/cluster2"
 # MinIO config
 export HOSTNAME=$(ifconfig -a|grep 10.0.0 |head -n1|awk '{print $2}')
 export MINIO_DESTINATIONPATH="s3://cnp/"
-export MINIO_PORT=9000
+export MINIO_PORT=9002
 export MINIO_ENDPOINTURL="http://${HOSTNAME}:${MINIO_PORT}"
 
 # **************

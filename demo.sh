@@ -13,3 +13,4 @@ helm upgrade --install \
 
 kubectl apply -f postgresql-operator-1.20.0.yaml
 k apply -f cluster-example01.yaml
+
